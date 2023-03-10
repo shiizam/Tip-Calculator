@@ -92,6 +92,7 @@ span{
   
   input{
     border-radius: 0.3125rem;
+    padding-right: 0;
   }
 
   input:hover,
