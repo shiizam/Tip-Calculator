@@ -1,0 +1,149 @@
+:root {
+  /******* Global Color Variables *******/
+  --active-btn: hsl(173, 61%, 77%);
+  --strong-cyan: hsl(172, 67%, 45%);
+  --dark-cyan: hsl(183, 100%, 15%);
+  --dark-gray-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-gray-cyan: hsl(185, 41%, 84%);
+  --very-gray-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+
+  /******* Global Style Variables *******/
+  --font-size-inputs: font-size: 24px;
+  --calc-font-weight: font-weight: 700;
+  
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+*{
+  box-sizing: border-box;
+  font-weight: 700;
+  font-family: 'Space Mono';
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  min-width: 375px;
+  max-width: 1440px;
+  min-height: 100vh;
+  background: var(--light-gray-cyan);
+}
+
+/****** Global Font Size Styles *******/
+h1{
+  font-size: 1.625rem;
+}
+
+h2, label{
+  font-size: 1rem;
+}
+
+h2, p{
+  margin: 0;
+}
+
+p{
+  font-size: 0.7813rem
+}
+
+input{
+  font-size: 1.5rem;
+}
+
+button{
+  font-size: 1.3rem;
+}
+
+span{
+  font-size: 1.75rem;
+}
+
+@media screen and (min-width: 1200px) {
+
+  .title-container{
+    padding: 0;
+    margin-bottom: 5rem;
+  }
+
+  .main-container{
+    display: grid;
+    grid-template-columns:  25rem 25rem;
+    grid-template-rows: auto auto auto;
+    gap: 2.5rem 2rem;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    box-shadow: -10px 20px 75px -35px var(--grayish-cyan);
+  }
+
+  label{
+    padding-bottom: 0.5rem;
+  }
+  
+  input{
+    border-radius: 0.3125rem;
+  }
+
+  input:hover,
+  button:hover{
+    cursor: pointer;
+  }
+
+  #bill-input{
+    grid-column: 1;
+  }
+  
+  .inp-group{
+    margin: 0 1rem;
+  }
+
+  .btn-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 1rem;
+  }
+
+  #btn-label{
+    padding: 0;
+    margin: 0;
+    grid-column: 1 / span 3;
+  }
+
+  #people-group{
+    grid-row: 3;
+  }
+
+  .output-container{
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    margin: 0; 
+    height: 100%;
+    padding: 2rem;
+  }
+  .tip-header{
+    padding-top: 1rem;
+  }
+
+  .total-header{
+    padding: 1rem 0 5rem;
+  }
+
+  .reset{
+    align-self: center;
+  }
+
+  span{
+    font-size: 3rem;
+    align-self: start;
+  }
+}
+

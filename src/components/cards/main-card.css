@@ -1,0 +1,91 @@
+.info--hidden{
+  height: 0 !important;
+}
+
+.input--error {
+	border: 1px solid red !important;
+}
+
+.info{
+	transition: height 0.3s ease-in-out;
+	font-size: 13px;
+	margin-top: 4px;
+	margin-bottom: 15px;
+	overflow: hidden;
+	height: 20px;
+	color: red;
+	margin: 0;
+  padding: 0;
+}
+
+
+.title-container{
+  padding: 2rem 0 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 1.65rem;
+}
+
+.inp-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label{
+  color: var(--dark-gray-cyan);
+  padding-bottom: 0.5rem;
+}
+
+input{
+  border: none;
+  border-radius: 0.3125rem;
+  background-color: var(--very-gray-cyan);
+  color: var(--dark-cyan);
+  text-align: right;
+  padding-right: 1rem;
+}
+
+input:active,
+input:focus{
+  outline-color: var(--strong-cyan);
+}
+
+#bill-inp{
+  background-image: url('../../assets/icon-dollar.svg');
+  background-repeat: no-repeat;
+  background-position: top 0.7rem left 1rem;
+}
+
+
+
+.btn-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+#btn-label{
+  grid-column: 1 / span 2;
+  padding: 1.5rem 0 0;
+}
+
+.custom-input{
+  width: 100%;
+}
+
+#num-people-inp{
+  background-image: url('../../assets/icon-person.svg');
+  background-repeat: no-repeat;
+  background-position: top 0.7rem left 1rem;
+}
+
